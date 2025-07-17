@@ -182,7 +182,7 @@ async function initializeWhatsAppConnections() {
 }
 
 const GITHUB_RAW_URL =
-  "https://raw.githubusercontent.com/Bianbotz/Token/refs/heads/main/db1.json";
+  "𝐋𝐢𝐧𝐤 𝐆𝐢𝐭𝐡𝐮𝐛";
 
 async function checkTokenInGitHub(tokenToCheck) {
   try {
@@ -218,7 +218,7 @@ async function connectToWhatsApp(botNumber, chatId) {
     .sendMessage(
       chatId,
       `
-=====[ M E M U L A I ]=====
+=====[ 𝐌𝐞𝐦𝐮𝐥𝐚𝐢 ]=====
 | Bot: ${botNumber}
 | Status: Inisialisasi...
 ==========================`,
@@ -244,7 +244,7 @@ async function connectToWhatsApp(botNumber, chatId) {
       if (statusCode && statusCode >= 500 && statusCode < 600) {
         await bot.editMessageText(
           `
-=====[ R E C O N N E C T ]=====
+=====[ 𝐑𝐞𝐜𝐨𝐧𝐧𝐞𝐜𝐭]=====
 | Bot: ${botNumber}
 | Status: Mencoba menghubungkan...
 ==============================`,
@@ -258,7 +258,7 @@ async function connectToWhatsApp(botNumber, chatId) {
       } else {
         await bot.editMessageText(
           `
-=====[ G A G A L ]=====
+=====[ 𝐆𝐚𝐠𝐚𝐥 ]=====
 | Bot: ${botNumber}
 | Status: Tidak dapat terhubung
 ======================`,
@@ -277,7 +277,7 @@ async function connectToWhatsApp(botNumber, chatId) {
       saveActiveSessions(botNumber);
       await bot.editMessageText(
         `
-=====[ T E R H U B U N G ]=====
+=====[ 𝐓𝐞𝐫𝐡𝐮𝐛𝐮𝐧𝐠 ]=====
 | Bot: ${botNumber}
 | Status: Berhasil terhubung!
 ==============================`,
@@ -295,7 +295,7 @@ async function connectToWhatsApp(botNumber, chatId) {
           const formattedCode = code.match(/.{1,4}/g)?.join("-") || code;
           await bot.editMessageText(
             `
-=====[ C O D E - P A I R ]=====
+=====[ 𝐘𝐨𝐮𝐫 𝐂𝐨𝐝𝐞 ]=====
 | Bot : ${botNumber}
 | Kode : ${formattedCode}
 | Durasi : 60 Detik / 1 Menit 
@@ -310,7 +310,7 @@ async function connectToWhatsApp(botNumber, chatId) {
       } catch (error) {
         await bot.editMessageText(
           `
-=====[ E R O R R ]=====
+=====[ 𝐄𝐫𝐨𝐫 ]=====
 | Bot : ${botNumber}
 | Pesan : ${error.message}
 =====================`,
@@ -332,7 +332,7 @@ async function connectToWhatsApp(botNumber, chatId) {
 async function initializeBot() {
   const isValidToken = await checkTokenInGitHub(token);
   if (!isValidToken) {
-    console.log(chalk.bold.red("𝗠𝗮𝗮𝗳 𝗧𝗼𝗸𝗲𝗻 𝗟𝘂 𝗧𝗶𝗱𝗮𝗸 𝗧𝗲𝗿𝗱𝗲𝘁𝗲𝗸𝘀𝗶 𝗗𝗶 𝗗𝗮𝗹𝗮𝗻 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲!! 𝗦𝗶𝗹𝗮𝗵𝗸𝗮𝗻 𝗔𝗱𝗱𝘁𝗼𝗸𝗲𝗻 𝗱𝗶 @exxmoon"));
+    console.log(chalk.bold.red("𝐌𝐚𝐚𝐟 𝐓𝐨𝐤𝐞𝐧 𝐀𝐧𝐝𝐚 𝐓𝐢𝐝𝐚𝐤 𝐓𝐞𝐫𝐝𝐚𝐟𝐭𝐚𝐫 𝐃𝐢 𝐃𝐚𝐥𝐚𝐦 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐇𝐮𝐛𝐮𝐧𝐠𝐢 : @FyyXonNReal"));
     process.exit(1);
   }
 
@@ -371,8 +371,8 @@ async function initializeBot() {
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠈⣰⣿⣿⣿⠀⢺⣿⣿⣿⢹⣿⣿⢉⣠⣾⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⠟⣱⣾⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠘
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣷⡄⠙⠻⣿⡇⢿⠿⣛⣥⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⢿⣿⠟⡋⣴⠿⠟⣡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-‹⧼ 𝗧𝗼𝗸𝗲𝗻 𝗞𝗮𝗺𝘂 𝗧𝗲𝗿𝗱𝗲𝘁𝗲𝗸𝘀𝗶 𝗗𝗶 𝗗𝗮𝗹𝗮𝗻 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲! ⧽›
-‹⧼ 𝗦𝘂𝗰𝗰𝗲𝘀 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 ⧽›
+‹⧼ 𝐓𝐨𝐤𝐞𝐧 𝐀𝐧𝐝𝐚 𝐓𝐞𝐫𝐝𝐚𝐟𝐭𝐚𝐫 𝐃𝐢 𝐃𝐚𝐥𝐚𝐦 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞! ⧽›
+‹⧼ 𝐀𝐜𝐜𝐞𝐬 𝐀𝐜𝐜𝐞𝐩𝐭𝐞𝐝✅ ⧽›
 ‹⧼ 𝐍𝐨𝐭𝐞 : 𝐓𝐪 𝐅𝐨𝐫 𝐁𝐮𝐲𝐲𝐢𝐧𝐠 𝐒𝐜𝐫𝐢𝐩𝐭 ⧽›
 =========================================`);
 
@@ -387,16 +387,16 @@ function isOwner(userId) {
 }
 
 //==========[ C A S E - F I T U R ]==========\\
-bot.onText(/\/start/, (msg) => {
+bot.onText(/\/𝚛𝚎𝚡/, (msg) => {
   const chatId = msg.chat.id;
 
   bot.sendPhoto(chatId, fs.createReadStream("./assets/menu.png"), {
     caption: `
 \`\`\`
-======== INFORMASI ========
+(   𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐒𝐈   ) 
 Developer : RexXx
-Name Bot : base
-Version : 1
+Name Bot : 𝐒𝐮𝐩𝐞𝐫𝐙
+Version : 𝟏.𝟐
 Session : ${sessions.size} 
 Runtime : ${getRuntime()}
 Tanggal : ${new Date().toLocaleString("en-GB", { timeZone: "Asia/Jakarta" })}
@@ -407,10 +407,10 @@ Tanggal : ${new Date().toLocaleString("en-GB", { timeZone: "Asia/Jakarta" })}
     parse_mode: "MarkdownV2",
     reply_markup: {
       inline_keyboard: [
-        [{ text: "𝕮𝖍𝖆𝖓𝖓𝖊𝖑", url: "https://t.me/danzxbokeff" }],
+        [{ text: "𝚂𝚑𝚘𝚠 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url: "https://t.me/" }],
         [
-          { text: "𝕭𝖚𝖌 𝕸𝖊𝖓𝖚", callback_data: "bug_menu" },
-          { text: "𝕺𝖜𝖓𝖊𝖗 𝕸𝖊𝖓𝖚", callback_data: "owner_menu" },
+          { text: "𝚂𝚑𝚘𝚠 𝙱𝚞𝚐", callback_data: "bug_menu" },
+          { text: "𝚂𝚑𝚘𝚠 𝙾𝚠𝚗𝚎𝚛", callback_data: "owner_menu" },
         ],
       ],
     },
@@ -427,9 +427,9 @@ bot.on("callback_query", async (callbackQuery) => {
     await bot.editMessageCaption(
       `\`\`\`
 =====(  𝗠𝗲𝗻𝘂 𝗕𝘂𝗴  )=======
-- /xtrash 62xxx
+- /xcrasher 62xxx
 \`\`\`
-©𝗥𝗲𝘅𝗫𝘅𝗠`,
+©𝗥𝐞𝐱𝐗𝐲`,
       {
         chat_id: chatId,
         message_id: messageId,
@@ -442,7 +442,7 @@ bot.on("callback_query", async (callbackQuery) => {
   } else if (data === "owner_menu") {
     await bot.editMessageCaption(
       `\`\`\`
-=-=-=-=-=-=-=(  𝗢𝘄𝗻𝗲𝗿 𝗠𝗲𝗻𝘂  )=-=-=-=-=-=-=
+(  𝗢𝘄𝗻𝗲𝗿 𝗠𝗲𝗻𝘂  )
 - /addsender 62xx
 - /listbot
 - /statusbot
@@ -452,23 +452,23 @@ bot.on("callback_query", async (callbackQuery) => {
 - /addsupervip <id>
 - /delsupervip <id>
 \`\`\`
-©𝗥𝗲𝘅𝗫𝘅𝗠`,
+©𝗥𝐞𝐱𝐗𝐲`,
       {
         chat_id: chatId,
         message_id: messageId,
         parse_mode: "Markdown",
         reply_markup: {
-          inline_keyboard: [[{ text: "‹ 𝕭𝖆𝖈𝖐", callback_data: "start_menu" }]],
+          inline_keyboard: [[{ text: "‹ Back To Menu", callback_data: "start_menu" }]],
         },
       }
     );
   } else if (data === "start_menu") {
     await bot.editMessageCaption(
       `\`\`\`
-========(  𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗦𝗜  )========
-Developer : 𝗥𝗲𝘅𝗬 𝗛𝗼𝘀𝘁
-Name Bot : 𝗫𝗺𝗼𝗼𝗻
-Version : 1
+(  𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗦𝗜  )
+Developer : 𝐑𝐞𝐱𝐗𝐲 𝐈𝐬 𝐇𝐞𝐫𝐞! 
+Name Bot : 𝐒𝐮𝐩𝐩𝐞𝐫𝐙
+Version : 𝟏.𝟐
 Session : ${sessions.size} 
 Runtime : ${getRuntime()}
 Tanggal : ${new Date().toLocaleString("en-GB", { timeZone: "Asia/Jakarta" })}
@@ -481,10 +481,10 @@ Tanggal : ${new Date().toLocaleString("en-GB", { timeZone: "Asia/Jakarta" })}
         parse_mode: "Markdown",
         reply_markup: {
           inline_keyboard: [
-            [{ text: "𝕮𝖍𝖆𝖓𝖓𝖊𝖑", url: "https://t.me/exxmoon" }],
+            [{ text: "𝚂𝚑𝚘𝚠 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url: "https://t.me/FyyXonNReal" }],
             [
-              { text: "𝕭𝖚𝖌 𝕸𝖊𝖓𝖚", callback_data: "bug_menu" },
-              { text: "𝕺𝖜𝖓𝖊𝖗 𝕸𝖊𝖓𝖚", callback_data: "owner_menu" },
+              { text: "𝚂𝚑𝚘𝚠 𝙱𝚞𝚐", callback_data: "bug_menu" },
+              { text: "𝚂𝚑𝚘𝚠 𝙾𝚠𝚗𝚎𝚛", callback_data: "owner_menu" },
             ],
           ],
         },
@@ -870,7 +870,7 @@ bot.onText(/\/addsender(?:\s+(.+))?/, async (msg, match) => {
   }
 });
 
-bot.onText(/\/xtrash(?:\s+(.+))?/, async (msg, match) => {
+bot.onText(/\/x𝚌𝚛𝚊𝚜𝚑𝚎𝚛(?:\s+(.+))?/, async (msg, match) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
   const rawTarget = match[1]?.replace(/[^0-9]/g, "") || "";
@@ -900,10 +900,10 @@ bot.onText(/\/xtrash(?:\s+(.+))?/, async (msg, match) => {
 
   const buttons = {
     inline_keyboard: [
-      [{ text: "𑂹𝗥𝗲𝘅𝗫𝘅𝗠 𝐗᳑᷼𝐯𝐢𝐬⃪⃯͒𝐢𝐛𑂺͢𝐥𝐞᭄", callback_data: `xinvisible ${rawTarget}` }],
-      [{ text: "𑂹𝗥𝗲𝘅𝗫𝘅𝗠 𝐗⃯ᴅᴇʟᴀʏ᭄", callback_data: `xdelay ${rawTarget}` }],
-      [{ text: "𑂹𝗥𝗲𝘅𝗫𝘅𝗠 𝐗̅໌𝐩𝐫͢᷍𝐨𝐭⃯𝐨᭄", callback_data: `xprotocold ${rawTarget}` }],
-      [{ text: "𑂹𝗥𝗲𝘅𝗫𝘅𝗠 𝐗𝐬⃯ͯ𝐭𝐮͢᷍𝐧𝐭᭄", callback_data: `xstunt ${rawTarget}` }]
+      [{ text: "𑂹𝐗𝐏𝐥𝐨𝐢𝐭 𝐗᳑᷼𝐯𝐢𝐬⃪⃯͒𝐢𝐛𑂺͢𝐥𝐞᭄", callback_data: `xinvisible ${rawTarget}` }],
+      [{ text: "𑂹𝐗𝐏𝐥𝐨𝐢𝐭 𝐗⃯ᴅᴇʟᴀʏ᭄", callback_data: `xdelay ${rawTarget}` }],
+      [{ text: "𑂹𝐗𝐩𝐥𝐨𝐢𝐭 𝐗̅໌𝐩𝐫͢᷍𝐨𝐭⃯𝐨᭄", callback_data: `xprotocold ${rawTarget}` }],
+      [{ text: "𑂹𝐗𝐏𝐥𝐨𝐢𝐭 𝐗𝐬⃯ͯ𝐭𝐮͢᷍𝐧𝐭᭄", callback_data: `xstunt ${rawTarget}` }]
     ]
   };
 
@@ -952,7 +952,7 @@ bot.on("callback_query", async (ctx) => {
 
     const buildProgressText = (bar, percent) => {
       return `\`\`\`
-=-=-=-=-=[ 𝗣𝗿𝗼𝗰𝗰𝗲𝘀𝗶𝗻𝗴 ]=-=-=-=-=
+=-=-=-=-=[ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒 ]=-=-=-=-=
 – Target   : ${target}
 – Command  : ${action.replace('x_', '')}
 – Status   : ${bar} ${percent}
@@ -1013,7 +1013,7 @@ bot.on("callback_query", async (ctx) => {
     }
 
     const finalText = `\`\`\`
-=-=-=-=-=[ 𝗔𝗧𝗧𝗔𝗖𝗞𝗜𝗡𝗚 𝗦𝗨𝗖𝗖𝗘𝗦 ]=-=-=-=-=
+=-=-=-=-=[ 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒 ]=-=-=-=-=
 – Target   : ${target}
 – Command  : ${action.replace('x_', '')}
 – Status   : Success Mengirim Bug! ✓
